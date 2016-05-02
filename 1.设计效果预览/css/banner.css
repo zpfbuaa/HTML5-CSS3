@@ -1,0 +1,80 @@
+@charset "utf-8";
+@import "reset.css";
+
+body {
+	padding: 20px;
+	background: #333;
+}
+
+a.banner {
+	display: block;
+	width: 728px;
+	height: 176px;
+	border: 1px solid #555;
+}
+
+a.banner {
+	position: relative;
+	background: 
+		url(../images/banner-arrow.png) no-repeat -100px 140px, 
+		url(../images/banner-photo.png) no-repeat -40px 220px, 
+		url(../images/banner-09.png) no-repeat -20px -380px,
+		url(../images/banner-bg.png) no-repeat 0 0;
+
+	-webkit-transition: all .2s ease-in .2s;
+	-moz-transition: all .2s ease-in .2s;
+	-o-transition: all .2s ease-in .2s;
+	-ms-transition: all .2s ease-in .2s;
+	transition: all .2s ease-in .2s;
+}
+.modern a.banner:hover, a.banner:focus {
+	background-position: 
+		20px 140px, 
+		-40px 20px, 
+		-20px -90px,
+		0 0;	
+}
+.modern .banner-logo {
+	position: absolute;
+	top: 20px;
+	left: 270px;
+	-webkit-transition: all .4s ease-out .3s;
+	-moz-transition: all .4s ease-out .3s;
+	-o-transition: all .4s ease-out .3s;
+	-ms-transition: all .4s ease-out .3s;
+	transition: all .4s ease-out .3s;
+}
+.modern a.banner:hover .banner-logo, 
+.modern a.banner:focus .banner-logo {
+		left: 540px;		
+}
+.modern .banner-desc {
+	opacity: 0;
+	position: absolute;
+	top: 39px;
+	left: 170px;
+	font: 32px/1.1 "NanumPenWeb", "方正静蕾简体", "Nanum Pen Script";
+	color: #4ec1cd;
+	-webkit-transition: all .4s ease-out .3s;
+	-moz-transition: all .4s ease-out .3s;
+	-o-transition: all .4s ease-out .3s;
+	-ms-transition: all .4s ease-out .3s;
+	transition: all .4s ease-out .3s;
+}
+.modern a.banner:hover .banner-desc, 
+.modern a.banner:focus .banner-desc {
+	opacity: 1;
+}
+.modern .banner-desc strong {
+	font-size: 23px;
+} 
+/		
+.old a.banner,
+.ie9 a.banner {
+	background: url(../images/banner-for-ie.png) no-repeat;
+}
+.old a.banner *,
+.ie9 a.banner * {
+	position: absolute;
+	top: -9999px;
+}

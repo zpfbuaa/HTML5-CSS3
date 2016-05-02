@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh" class="no-js modern">
+<head>
+<meta charset="utf-8" />
+<title>CSS3 Banner Design - 动画Banner设计</title>
+<link href='http://api.mobilis.co.kr/webfonts/css/?fontface=NanumPenWeb' rel='stylesheet' />
+<link href="css/banner.css" rel="stylesheet" />
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.banner_sound.js"></script>
+<script src="js/banner.js"></script>
+<script src="text/javascript">
+	(function($){
+		$(function(){
+			$(',banner').banner_sound('media/banner_sound.mp3');
+		});
+	})(jQuery);
+</script>
+</head>
+<body>
+	
+	<a class="banner" href="http://yamoo9.com">
+		<img class="banner-logo" src="images/banner-logo.png" alt="yamoo9.com" width="167" height="134" />
+		<p class="banner-desc">开放知识讲座, 视频Cast!<br /> 分享设计心得的乐园!<br /><strong>- Yamoo9</strong></p>
+	</a>
+		
+</body>
+</html>
